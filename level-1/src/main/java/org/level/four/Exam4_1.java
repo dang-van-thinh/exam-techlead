@@ -1,26 +1,12 @@
-package org.level.one;
+package org.level.four;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Exam1_6 {
+public class Exam4_1 {
     public static void main(String[] args) {
-
-        System.out.println("Sap xep theo thu tu tang dan : " + Arrays.toString(sort(input())));
-    }
-
-    static int[] input() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Nhap so luong co trong mang: ");
-        int numberOfArray = scanner.nextInt();
-        int[] arrStr = new int[numberOfArray];
-
-        for (int i = 0; i < numberOfArray; i++) {
-            System.out.println("Nhap phan tu thu " + i + " : ");
-            int number = scanner.nextInt();
-            arrStr[i] = number;
-        }
-        return arrStr;
+        int[] arr = {3, 1, 4, 2, 6, 5};
+        System.out.println(Arrays.toString(sort(arr)));
     }
 
     static int[] sort(int[] input) {
@@ -45,4 +31,5 @@ public class Exam1_6 {
         System.out.println(dem);
         return input;
     }
+
 }
