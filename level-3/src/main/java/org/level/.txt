@@ -1,0 +1,5 @@
+Bài tập chuyển đổi về biểu thức hậu tố.
+
+- Người dùng nhập 1 string biểu diễn công thức toán học, ví dụ: 1 + 2 x (3 + 4)
+-> Hệ thống tính toán ra kết quả của biểu thức: ví dụ biểu thức trên ra kết quả 15
+- Người dùng có thể nhập bất kỳ công thức toán học bất kỳ với các phép toán: cộng, trừ, nhân, chia với các dấu ngoặc đơn

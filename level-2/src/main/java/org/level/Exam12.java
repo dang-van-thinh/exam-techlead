@@ -1,5 +1,7 @@
 package org.level;
 
+import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 public class Exam12 {
@@ -8,6 +10,7 @@ public class Exam12 {
     }
 
     static Set<String> arrange(){
-        return null;
+        Set<List<String>> productSet = new HashSet<>();
+return null;
     }
 }
