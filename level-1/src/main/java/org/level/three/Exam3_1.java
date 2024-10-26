@@ -33,7 +33,14 @@ public class Exam3_1 {
                 }
             }
         }
+        int result = 0;
+        for (int i = 0; i < input.length; i++) {
+            if (input[i+1] > input[i]){
+                result= input[i+1];
+                break;
+            }
+        }
         System.out.println(Arrays.toString(input));
-        return input[1];
+        return result;
     }
 }

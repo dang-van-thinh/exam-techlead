@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class Exam3_3 {
     public static void main(String[] args) {
+        // chua duoc
         System.out.println(subLongest(input()));
     }
     static int[] input(){
@@ -22,26 +23,16 @@ public class Exam3_3 {
     }
 
     static int subLongest(int[] input){
-        int[] newArr = new int[input.length];
+        int number = input[0];
+        for (int i = 1; i < input.length; i++) {
+            if (input[i] < input[i-1]){
+                input[i]=input[i+1];
 
-        for (int i = 0; i < input.length; i++) {
-            newArr[i] =1;
-        }
-        for (int i = 0; i < input.length; i++) {
-            for (int j = 0; j < i; j++) {
-                if (input[i] < input[j]){
-                    input[i]= Math.max(newArr[i],newArr[j])+1;
-                }
+            }else {
+                i++;
             }
         }
-
-        int maxLength = 0;
-        for (int i = 0; i < input.length; i++) {
-            maxLength=  Math.max(maxLength,newArr[i]);
-        }
-
-        System.out.println(Arrays.toString(input));
-        return maxLength;
+        return input.length;
     }
 
     // chưa được

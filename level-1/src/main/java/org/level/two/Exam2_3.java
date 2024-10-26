@@ -8,6 +8,5 @@ public class Exam2_3 {
     static String subString(String[] input){
 
         return null;
-        // chua lam duoc
     }
 }
