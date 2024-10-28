@@ -41,18 +41,32 @@ public class Exam3_6 {
         System.out.println(Arrays.toString(dst));
         return dst;
     }
-
+    static int[] arrange(int[] input){
+        int tam;
+        for (int i = 1; i < input.length; i++) {
+            for (int j = 0; j < input.length-1; j++) {
+                if (input[i] < input[j]){
+                    tam = input[j];
+                    input[j]=input[i];
+                    input[i]=tam;
+                }
+            }
+        }
+        return input;
+    }
     static void median(int[] input) {
-        if (input.length % 2 == 0) {
-            int locationLeft = (input.length / 2) - 1;
-            System.out.println("value left "+input[locationLeft]);
-            int locationRight = (input.length / 2);
+        int[] newInput = arrange(input);
+        System.out.println(Arrays.toString(newInput));
+        if (newInput.length % 2 == 0) {
+            int locationLeft = (newInput.length / 2) - 1;
+            System.out.println("value left "+newInput[locationLeft]);
+            int locationRight = (newInput.length / 2);
             System.out.println("location "+locationRight);
-            System.out.println("value right "+input[locationRight]);
-            float number = (float) (input[locationLeft] + input[locationRight]) / 2;
+            System.out.println("value right "+newInput[locationRight]);
+            float number = (float) (newInput[locationLeft] + newInput[locationRight]) / 2;
             System.out.println("So trung vi cua mang la : " + number);
         } else {
-            System.out.println("So trung vi cua mang la : " + input[input.length / 2]);
+            System.out.println("So trung vi cua mang la : " + newInput[newInput.length / 2]);
         }
 
     }

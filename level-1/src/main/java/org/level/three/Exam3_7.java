@@ -2,7 +2,7 @@ package org.level.three;
 
 public class Exam3_7 {
     public static void main(String[] args) {
-    String input = "A man a plan a canal Panama";
+    String input = "GEEG";
     if (palindrome(input)){
         System.out.println(input);
     }else {
@@ -23,7 +23,8 @@ public class Exam3_7 {
             right--;
             count++;
         }
-        System.out.println(count*2);
+        System.out.println(input.length());
+        System.out.println(input);
         return true;
     }
 }
