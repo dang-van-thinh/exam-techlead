@@ -10,7 +10,13 @@
         <option value="$PROJECT_DIR$/level-3/pom.xml" />
         <option value="$PROJECT_DIR$/level-4/pom.xml" />
         <option value="$PROJECT_DIR$/level-1/pom.xml" />
+        <option value="$PROJECT_DIR$/database/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/database/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager">
